@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companion Crop Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Companion Crop Finder</h1>
+        <label for="crop-input">Enter a crop:</label>
+        <input type="text" id="crop-input" placeholder="Enter a crop name...">
+        <button onclick="findCompanionsAndFoes()">Find Companion & Foe Crops</button>
+        
+        <div id="main-crop">
+            <h3>Main Crop</h3>
+            <div id="main-crop-image"></div>
+        </div>
+
+        <div id="companions">
+            <h3>Companion Crops</h3>
+            <ul id="companion-list"></ul>
+            <div id="companion-images-list" class="image-grid"></div>
+        </div>
+
+        <div id="foes">
+            <h3>Foe Crops:</h3>
+            <ul id="foe-list"></ul>
+            <div id="foe-images-list" class="image-grid"></div>
+        </div>
+
+        <div id="details">
+            <h3>Main Crop Details</h3>
+            <table id="details-table">
+                <!-- Details will be displayed here as a table -->
+            </table>
+        </div>
+
+        <div id="benefits">
+            <h3>Benefits of Main Crop</h3>
+            <table id="benefits-table">
+                <!-- Benefits will be displayed here as a table -->
+            </table>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
